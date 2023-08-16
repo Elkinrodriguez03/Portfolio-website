@@ -36,9 +36,11 @@ const Navbar = () => {
             <div className="justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3">
-                        <div className="md:py-5 md:block">
-                            <h2 className="text-2xl font-bold">Elkin Rodriguez Siatama</h2>
-                        </div>
+                        <Link to="home">
+                            <div className="md:py-5 md:block cursor-pointer">
+                                <h2 className="text-2xl font-bold">Elkin Rodriguez Siatama</h2>
+                            </div>
+                        </Link>
                         <div className="md:hidden">
                             <button onClick={() => setNavbar(!navbar)}>
                                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -55,11 +57,11 @@ const Navbar = () => {
                                         key={idx}
                                         to={item.page}
                                         className={
-                                            "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
+                                            "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
                                         }
                                         activeClass="active"
                                         spy={true}
-                                        smooth={true}
+                                        smooth={true} 
                                         offset={-100}
                                         duration={500}
                                         onClick={() => setNavbar(!navbar)}
