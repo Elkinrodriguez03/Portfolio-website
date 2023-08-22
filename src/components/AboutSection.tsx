@@ -9,6 +9,13 @@ const skills = [
     { skill: "React" },
     { skill: "Next.js" },
     { skill: "Tailwind CSS" },
+    { skill: "Material UI" },
+    { skill: "Bootstrap" },
+    { skill: "NodeJS" },
+    { skill: "Express" },
+    { skill: "PostgreSQL"},
+    { skill: "MongoDB" },
+    { skill: "Figma" },
     { skill: "Git" },
     { skill: "GitHub" },
 ]
@@ -35,14 +42,18 @@ const AboutSection = () => {
                     </p>
                     <br />
                     <p>
-                        I graduated from ECCI, Bogota in 2013
-                        with a technical degree in Software Development and have been working in the
-                        field since 2019.
+                        I am a Software Developer with 4+ years of experience in the IT industry 
+                        getting involved in development of web services. As a self-learner, I got 
+                        solid knowledge in Object Oriented Programming (OOP), Search Engine Optimization 
+                        (SEO), debugging code, algorithms and Data Structures. I have been specializing 
+                        in User Experience to design and develop functional applications to achieve the 
+                        highest quality of the delivered product. Also I have strong communication skills, 
+                        adaptability and problem-solving mindset.
                     </p>
                     <br />
                     <p>
                         I have a wide range of hobbies and passions that keep me busy.
-                        From reading, playing sports, traveling, to making YouTube videos,
+                        From reading, playing and watching sports, listen to music, playing the guitar,
                         I am always seeking new experiences and love to keep myself
                         engaged and learning new things.
                     </p>
@@ -54,7 +65,7 @@ const AboutSection = () => {
                         </span>{" "}
                         and that&#39;s what I strive to do, I have a passion for
                         technology and a desire to always push the limits of what is
-                        possible. I am excited to see where my career takes me and am
+                        possible. I am excited to see where my career takes me and I am
                         always open to new opportunities.
                     </p>
                 </div>
