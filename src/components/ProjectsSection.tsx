@@ -63,7 +63,7 @@ const ProjectsSection = () => {
                                             />
                                         </Link>
                                     </div>
-                                    <div className="md:w-1/2">
+                                    <div className="md:w-1/2 mt-3">
                                         <h1 className="text-4xl font-bold mb-6">
                                             {project.name}
                                         </h1>
