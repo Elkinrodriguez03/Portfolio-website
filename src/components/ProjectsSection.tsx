@@ -6,8 +6,16 @@ import SlideUp from "./SlideUp";
 
 const projects = [
     {
+        name: "E-commerce",
+        description: "This is a application based on ReactJS, Vite and Tailwind, deployed in vercel. It is an ecommerce interface to check product stock, make orders, see product details and filter by category or name.",
+        image: "/E-commerce.png",
+        github: "https://github.com/Elkinrodriguez03/E-commerce_frontend",
+        link: "https://e-commerce-frontend-eta.vercel.app/"
+
+    },
+    {
         name: "To-Do App",
-        description: "This is an application to manage task and duties pending to complete.",
+        description: "This is an application to manage task and duties pending to complete. You can add a new task, delete it, mark as complete and search by task name.",
         image: "/TO-DO App.png",
         github: "https://github.com/Elkinrodriguez03/react-todo-app",
         link: "https://elkinrodriguez03.github.io/react-todo-app/"
