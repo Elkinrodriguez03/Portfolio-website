@@ -8,7 +8,7 @@ const projects = [
     {
         name: "E-commerce",
         description: "This is a application based on ReactJS, Vite and Tailwind, deployed in vercel. It is an ecommerce interface to check product stock, make orders, see product details and filter by category or name.",
-        image: "/E-commerce.png",
+        image: "/images/E-commerce.png",
         github: "https://github.com/Elkinrodriguez03/E-commerce_frontend",
         link: "https://e-commerce-frontend-eta.vercel.app/"
 
@@ -16,7 +16,7 @@ const projects = [
     {
         name: "To-Do App",
         description: "This is an application to manage task and duties pending to complete. You can add a new task, delete it, mark as complete and search by task name.",
-        image: "/TO-DO App.png",
+        image: "/images/TO-DO App.png",
         github: "https://github.com/Elkinrodriguez03/react-todo-app",
         link: "https://elkinrodriguez03.github.io/react-todo-app/"
 
@@ -24,7 +24,7 @@ const projects = [
     {
         name: "Monster Fight",
         description: "This is a application based on HTML5, CSS, JavaScript and something of NodeJS. It's a game to simulate combats within Monster fighters .",
-        image: "/monster-fight.png",
+        image: "/images/monster-fight.png",
         github: "https://github.com/Elkinrodriguez03/Monster-Fight_Game",
         link: "https://monster-fight-game-dn67pmsfv-elkinrodriguez03.vercel.app/"
 
@@ -32,7 +32,7 @@ const projects = [
     {
         name: "Image Generator",
         description: "This is a application created with ReactJS implementing Unsplash API. I have been working with back-end and database technologies, for that reason I started this project to practice on the implementation, usage and manipulation of APIs.",
-        image: "/image-generator.png",
+        image: "/images/image-generator.png",
         github: "https://github.com/Elkinrodriguez03/Random_Image_Generator",
         link: "https://random-image-generator-inky.vercel.app/"
 

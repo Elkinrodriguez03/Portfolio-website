@@ -80,7 +80,7 @@ const AboutSection = () => {
                     </div>
                     <Image 
                         className="rounded-full hidden md:block md:relative md:top-3 md:left-16 md:z-0"
-                        src="/About-photo.jpg"
+                        src="/images/About-photo.jpg"
                         alt=""
                         width={300}
                         height={300}
