@@ -14,6 +14,14 @@ const projects = [
 
     },
     {
+        name: "Product-carousel",
+        description: "This project is a responsive Product-carousel website built using HTML, CSS, and vanilla JavaScript. The website is designed to be fully responsive and adapt to different screen sizes.",
+        image: "/images/carousel.png",
+        github: "https://github.com/Elkinrodriguez03/TechnicalCodeTest",
+        link: "https://technical-code-test.vercel.app/"
+
+    },
+    {
         name: "To-Do App",
         description: "This is an application to manage task and duties pending to complete. You can add a new task, delete it, mark as complete and search by task name.",
         image: "/images/TO-DO App.png",
