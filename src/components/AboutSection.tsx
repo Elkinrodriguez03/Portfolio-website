@@ -82,7 +82,7 @@ const AboutSection = () => {
                         })}
                     </div>
                     <Image 
-                        className="rounded-full hidden md:block md:relative md:top-3 md:left-16 md:z-0"
+                        className="rounded-full hidden md:block md:relative md:top-8 md:left-16 md:z-0"
                         src="/images/About-photo.jpg"
                         alt="About Photo"
                         width={300}
