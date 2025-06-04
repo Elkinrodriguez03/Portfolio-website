@@ -7,10 +7,13 @@ const skills = [
     { skill: "JavaScript" },
     { skill: "TypeScript" },
     { skill: "React" },
+    { skill: "Vue.js" },
     { skill: "Next.js" },
     { skill: "Tailwind CSS" },
     { skill: "Material UI" },
     { skill: "Bootstrap" },
+    { skill: "GraphQL" },
+    { skill: "REST APIs" },
     { skill: "NodeJS" },
     { skill: "Express" },
     { skill: "PostgreSQL"},
@@ -23,7 +26,7 @@ const skills = [
 const AboutSection = () => {
     return (
         <section id="about">
-            <div className="my-12 pb-12 md:pt-16 md:pb-48">
+            <div className="mt-20 mb-12 pb-14 md:pt-16 md:pb-20">
             <h1 className="text-center font-bold text-4xl">
                 About Me
                 <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"/>
@@ -60,7 +63,7 @@ const AboutSection = () => {
                     <br />
                     <p>
                         I believe that you should{" "}
-                        <span className="font-bold text-teal-500">
+                        <span className="font-bold">
                             never stop growing
                         </span>{" "}
                         and that&#39;s what I strive to do, I have a passion for

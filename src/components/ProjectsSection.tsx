@@ -14,11 +14,27 @@ const projects = [
 
     },
     {
+        name: "To-Do App",
+        description: "A straightforward and clean Todo application built using Vite, React, and TypeScript. This project demonstrates basic state management, component handling, and type safety in a modern React development environment.",
+        image: "/images/todo_app_typescript.png",
+        github: "https://github.com/Elkinrodriguez03/Todo-App",
+        link: "https://todo-app-tau-puce.vercel.app/"
+
+    },
+    {
         name: "Product-carousel",
         description: "This project is a responsive Product-carousel website built using HTML, CSS, and vanilla JavaScript. The website is designed to be fully responsive and adapt to different screen sizes.",
         image: "/images/carousel.png",
         github: "https://github.com/Elkinrodriguez03/TechnicalCodeTest",
         link: "https://technical-code-test.vercel.app/"
+        
+    },
+    {
+        name: "Image Generator",
+        description: "A simple and responsive web application built with Vite, React, and TypeScript that fetches and displays image data from the Unsplash API.",
+        image: "/images/image_generator.png",
+        github: "https://github.com/Elkinrodriguez03/image_generator_app",
+        link: "https://image-generator-app-omega.vercel.app/"
 
     },
     {
@@ -37,14 +53,6 @@ const projects = [
         link: "https://monster-fight-game-dn67pmsfv-elkinrodriguez03.vercel.app/"
 
     },
-    {
-        name: "Image Generator",
-        description: "This is a application created with ReactJS implementing Unsplash API. I have been working with back-end and database technologies, for that reason I started this project to practice on the implementation, usage and manipulation of APIs.",
-        image: "/images/image-generator.png",
-        github: "https://github.com/Elkinrodriguez03/Random_Image_Generator",
-        link: "https://random-image-generator-inky.vercel.app/"
-
-    }
 ]
 
 const ProjectsSection = () => {
@@ -54,7 +62,7 @@ const ProjectsSection = () => {
                 Projects
                 <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"/>
             </h1>
-            <div className="flex flex-col space-y-28">
+            <div className="flex flex-col space-y-28 p-4">
                 {projects.map((project, idx) => {
                     return (
                         <div key={idx}> 
