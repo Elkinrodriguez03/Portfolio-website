@@ -8,10 +8,10 @@ import { projects } from "../data/projects";
 const ProjectsSection = () => {
     return (
         <section id="projects">
-            <h1 className="text-center font-bold text-4xl">
+            <h2 className="text-center font-bold text-4xl">
                 Projects
                 <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"/>
-            </h1>
+            </h2>
             <div className="flex flex-col space-y-28 p-4">
                 {projects.map((project) => {
                     return (
@@ -30,9 +30,9 @@ const ProjectsSection = () => {
                                         </Link>
                                     </div>
                                     <div className="md:w-1/2 mt-3">
-                                        <h1 className="text-4xl font-bold mb-6">
+                                        <h3 className="text-4xl font-bold mb-6">
                                             {project.name}
-                                        </h1>
+                                        </h3>
                                         <p className="text-xl leading-7 mb-4x text-neutral-600 dark:text-neutral-400">
                                             {project.description}
                                         </p>

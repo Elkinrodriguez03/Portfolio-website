@@ -43,11 +43,11 @@ const Navbar = () => {
                                     <Image 
                                         className="mr-3"
                                         src="/images/nanotechnology.png"
-                                        alt="Logo"
+                                        alt="Personal logo"
                                         width={30}
                                         height={30}
                                     />
-                                    <h2 className="text-2xl font-bold">Elkin Rodriguez Siatama</h2>
+                                    <h1 className="text-2xl font-bold">Elkin Rodriguez Siatama</h1>
                                 </div>
                             </div>
                         </Link>
@@ -58,13 +58,12 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <nav aria-label="Primary navigation">
                     <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
-                        <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            {NAV_ITEMS.map((item) => {
-                                return (
+                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                            {NAV_ITEMS.map((item) => (
+                                <li key={item.page}>
                                     <Link
-                                        key={item.page}
                                         to={item.page}
                                         className={
                                             "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
@@ -78,28 +77,30 @@ const Navbar = () => {
                                     >
                                         {item.label}
                                     </Link>
-                                )
-                            })}
-                            {currentTheme === "dark" ? (
-                                <button
-                                    onClick={() => setTheme("light")}
-                                    className="bg-slate-100 p-2 rounded-xl"
-                                    aria-label="Switch to light theme"
-                                >
-                                    <RiSunLine size={25} color="black"/>
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={() => setTheme("dark")}
-                                    className="bg-slate-100 p-2 rounded-xl"
-                                    aria-label="Switch to dark theme"
-                                >
-                                    <RiMoonFill size={25} color="black"/>
-                                </button>
-                            )}
-                        </div>
+                                </li>
+                            ))}
+                            <li>
+                                {currentTheme === "dark" ? (
+                                    <button
+                                        onClick={() => setTheme("light")}
+                                        className="bg-slate-100 p-2 rounded-xl"
+                                        aria-label="Switch to light theme"
+                                    >
+                                        <RiSunLine size={25} color="black"/>
+                                    </button>
+                                ) : (
+                                    <button
+                                        onClick={() => setTheme("dark")}
+                                        className="bg-slate-100 p-2 rounded-xl"
+                                        aria-label="Switch to dark theme"
+                                    >
+                                        <RiMoonFill size={25} color="black"/>
+                                    </button>
+                                )}
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
             </div>
         </header>
     )
