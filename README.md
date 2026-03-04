@@ -1,34 +1,60 @@
-# Portfolio-website
+## Portfolio website
 
-This is a repository for a personal portfolio website, to my skills and projects I've been working on. It's a project built using NextJs and Tailwind for styling.
+Personal portfolio built with **Next.js (App Router)**, **React 18**, **TypeScript**, and **Tailwind CSS**, showcasing projects and following scalable, maintainable architecture and good engineering practices.
 
-## Getting Started
+### Tech stack & architecture
 
-First, run the development server:
+- **Framework**: Next.js 15 (App Router, `src/app`)
+- **Language**: TypeScript (`strict` mode)
+- **Styling**: Tailwind CSS, dark mode with `next-themes`
+- **Data layer**: Typed modules under `src/data` (`projects`, `skills`, `socialLinks`)
+- **Layout**:
+  - `RootLayout` as a **server component** with Next `metadata` API
+  - Client-side `Providers` wrapper for theming
+  - `PageContainer` component for consistent page width and padding
+- **UX/UI utilities**:
+  - `SlideUp` intersection observer animation wrapper
+  - Smooth scrolling navigation with a semantic `<nav>` + list structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Quality, testing & git hooks
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Linting**: `npm run lint` (Next + ESLint, wired to Husky pre-commit via `lint-staged`)
+- **Testing**:
+  - Jest + React Testing Library (`jest-environment-jsdom`, `next/jest`)
+  - Example test: `HeroSection` rendered heading
+- **Git hooks (Husky)**:
+  - `pre-commit`: runs `lint-staged` → `next lint` on staged JS/TS/TSX files
+  - `pre-push`: runs `npm test`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Development**:
 
-## Learn More
+  ```bash
+  npm run dev
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+- **Lint**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ```bash
+  npm run lint
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Tests**:
 
-## Deploy on Vercel
+  ```bash
+  npm test
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Production build**:
+
+  ```bash
+  npm run build
+  npm start
+  ```
+
+### Node & deployment
+
+- Target Node.js version: **24.x** (configure this in your Vercel project settings).
+- Deployed on Vercel using the standard Next.js build pipeline.
+
