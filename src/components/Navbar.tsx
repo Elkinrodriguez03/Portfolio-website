@@ -52,7 +52,7 @@ const Navbar = () => {
                             </div>
                         </Link>
                         <div className="md:hidden">
-                            <button onClick={() => setNavbar(!navbar)}>
+                            <button onClick={() => setNavbar((prev) => !prev)} aria-label="Toggle navigation menu">
                                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
                             </button>
                         </div>
@@ -61,10 +61,10 @@ const Navbar = () => {
                 <div>
                     <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
                         <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            {NAV_ITEMS.map((item, idx) => {
+                            {NAV_ITEMS.map((item) => {
                                 return (
                                     <Link
-                                        key={idx}
+                                        key={item.page}
                                         to={item.page}
                                         className={
                                             "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
@@ -74,7 +74,7 @@ const Navbar = () => {
                                         smooth={true} 
                                         offset={-100}
                                         duration={500}
-                                        onClick={() => setNavbar(!navbar)}
+                                        onClick={() => setNavbar(false)}
                                     >
                                         {item.label}
                                     </Link>
@@ -84,6 +84,7 @@ const Navbar = () => {
                                 <button
                                     onClick={() => setTheme("light")}
                                     className="bg-slate-100 p-2 rounded-xl"
+                                    aria-label="Switch to light theme"
                                 >
                                     <RiSunLine size={25} color="black"/>
                                 </button>
@@ -91,6 +92,7 @@ const Navbar = () => {
                                 <button
                                     onClick={() => setTheme("dark")}
                                     className="bg-slate-100 p-2 rounded-xl"
+                                    aria-label="Switch to dark theme"
                                 >
                                     <RiMoonFill size={25} color="black"/>
                                 </button>
