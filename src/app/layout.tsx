@@ -1,26 +1,32 @@
-"use client"
-import React from "react";
-import './globals.css';
-import Navbar from '../components/Navbar';
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Head from "./head";
-import { ThemeProvider } from 'next-themes'
+import { Providers } from "./providers";
+
+export const metadata: Metadata = {
+  title: "Elkin Rodriguez",
+  description: "Personal portfolio of Elkin Rodriguez, Software Developer.",
+  icons: {
+    icon: "/images/artificial-intelligence.png",
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Head />
+    <html lang="en" suppressHydrationWarning>
       <body className="dark:bg-stone-900">
-        <ThemeProvider enableSystem={true} attribute='class'>
+        <Providers>
           <Navbar />
           {children}
           <Footer />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
-  )
+  );
 }
+
