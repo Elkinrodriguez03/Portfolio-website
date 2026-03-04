@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.5.0",
@@ -25,7 +26,14 @@
   "devDependencies": {
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.15",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.2",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "next lint --fix --file"
+    ]
   }
 }
