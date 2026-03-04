@@ -1,27 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
-const skills = [
-    { skill: "HTML" },
-    { skill: "CSS" },
-    { skill: "JavaScript" },
-    { skill: "TypeScript" },
-    { skill: "React" },
-    { skill: "Vue.js" },
-    { skill: "Next.js" },
-    { skill: "Tailwind CSS" },
-    { skill: "Material UI" },
-    { skill: "Bootstrap" },
-    { skill: "GraphQL" },
-    { skill: "REST APIs" },
-    { skill: "NodeJS" },
-    { skill: "Express" },
-    { skill: "PostgreSQL"},
-    { skill: "MongoDB" },
-    { skill: "Figma" },
-    { skill: "Git" },
-    { skill: "GitHub" },
-]
+import { skills } from "../data/skills";
 
 const AboutSection = () => {
     return (
@@ -77,9 +56,14 @@ const AboutSection = () => {
                         My skills
                     </h1>
                     <div className="flex flex-wrap flex-row justify-center md:justify-start">
-                        {skills.map((item, idx) => {
-                            return <p key={idx} className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold">{item.skill}</p>
-                        })}
+                        {skills.map((item) => (
+                          <p
+                            key={item.name}
+                            className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                          >
+                            {item.name}
+                          </p>
+                        ))}
                     </div>
                     <Image 
                         className="rounded-full hidden md:block md:relative md:top-8 md:left-16 md:z-0"
