@@ -55,6 +55,6 @@ Personal portfolio built with **Next.js (App Router)**, **React 18**, **TypeScri
 
 ### Node & deployment
 
-- Target Node.js version: **24.x** (configure this in your Vercel project settings).
+- Target Node.js version: **24.x**.
 - Deployed on Vercel using the standard Next.js build pipeline.
 
