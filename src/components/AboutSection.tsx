@@ -24,8 +24,8 @@ const AboutSection = () => {
                     </p>
                     <br />
                     <p>
-                        I am a Software Developer with 4+ years of experience in the IT industry 
-                        getting involved in development of web services. As a self-learner, I got 
+                        I am a Software Developer with 5+ years of experience in the IT industry 
+                        getting involved in development of web services. I got 
                         solid knowledge in Object Oriented Programming (OOP), Search Engine Optimization 
                         (SEO), debugging code, algorithms and Data Structures. I have been specializing 
                         in User Experience to design and develop functional applications to achieve the 
@@ -43,7 +43,7 @@ const AboutSection = () => {
                     <p>
                         I believe that you should{" "}
                         <span className="font-bold">
-                            never stop growing
+                            never stop learning
                         </span>{" "}
                         and that&#39;s what I strive to do, I have a passion for
                         technology and a desire to always push the limits of what is
