@@ -11,9 +11,17 @@ export const projects: Project[] = [
     name: "E-commerce",
     description:
       "Application built with React, Vite, and Tailwind CSS. Allows users to browse products, view details, filter by category or name, and place orders.",
-    image: "/images/E-commerce.png",
+    image: "/images/ecommerce.png",
     github: "https://github.com/Elkinrodriguez03/E-commerce_frontend",
     link: "https://e-commerce-frontend-eta.vercel.app/",
+  },
+  {
+    name: "AI Image Generator",
+    description:
+      "Responsive web application built with Next and TypeScript generating images from text prompts.",
+    image: "/images/AI-image-generator.png",
+    github: "https://github.com/Elkinrodriguez03/ai-image-generator",
+    link: "https://ai-image-generator-mu-two.vercel.app/",
   },
   {
     name: "To-Do App (TypeScript)",
@@ -22,14 +30,6 @@ export const projects: Project[] = [
     image: "/images/todo_app_typescript.png",
     github: "https://github.com/Elkinrodriguez03/Todo-App",
     link: "https://todo-app-tau-puce.vercel.app/",
-  },
-  {
-    name: "AI Image Generator",
-    description:
-      "Responsive web application built with Next and TypeScript generating images from text prompts.",
-    image: "/images/image_generator.png",
-    github: "https://github.com/Elkinrodriguez03/ai-image-generator",
-    link: "https://ai-image-generator-mu-two.vercel.app/",
   },
   // {
   //   name: "Product Carousel",
