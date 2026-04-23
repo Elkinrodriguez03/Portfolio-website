@@ -24,36 +24,44 @@ export const projects: Project[] = [
     link: "https://todo-app-tau-puce.vercel.app/",
   },
   {
-    name: "Product Carousel",
+    name: "AI Image Generator",
     description:
-      "Responsive product carousel website built with HTML, CSS, and vanilla JavaScript, designed to adapt gracefully to various screen sizes.",
-    image: "/images/carousel.png",
-    github: "https://github.com/Elkinrodriguez03/TechnicalCodeTest",
-    link: "https://technical-code-test.vercel.app/",
-  },
-  {
-    name: "Image Generator",
-    description:
-      "Responsive web application built with Vite, React, and TypeScript that fetches and displays images from the Unsplash API.",
+      "Responsive web application built with Next and TypeScript generating images from text prompts.",
     image: "/images/image_generator.png",
-    github: "https://github.com/Elkinrodriguez03/image_generator_app",
-    link: "https://image-generator-app-omega.vercel.app/",
+    github: "https://github.com/Elkinrodriguez03/ai-image-generator",
+    link: "https://ai-image-generator-mu-two.vercel.app/",
   },
-  {
-    name: "To-Do App",
-    description:
-      "Task management application to add, delete, mark complete, and search tasks by name, built with React.",
-    image: "/images/TO-DO App.png",
-    github: "https://github.com/Elkinrodriguez03/react-todo-app",
-    link: "https://elkinrodriguez03.github.io/react-todo-app/",
-  },
-  {
-    name: "Monster Fight",
-    description:
-      "Browser game built with HTML5, CSS, JavaScript, and some Node.js to simulate combat between monster fighters.",
-    image: "/images/monster-fight.png",
-    github: "https://github.com/Elkinrodriguez03/Monster-Fight_Game",
-    link: "https://monster-fight-game-dn67pmsfv-elkinrodriguez03.vercel.app/",
-  },
+  // {
+  //   name: "Product Carousel",
+  //   description:
+  //     "Responsive product carousel website built with HTML, CSS, and vanilla JavaScript, designed to adapt gracefully to various screen sizes.",
+  //   image: "/images/carousel.png",
+  //   github: "https://github.com/Elkinrodriguez03/TechnicalCodeTest",
+  //   link: "https://technical-code-test.vercel.app/",
+  // },
+  // {
+  //   name: "Image Generator",
+  //   description:
+  //     "Responsive web application built with Vite, React, and TypeScript that fetches and displays images from the Unsplash API.",
+  //   image: "/images/image_generator.png",
+  //   github: "https://github.com/Elkinrodriguez03/image_generator_app",
+  //   link: "https://image-generator-app-omega.vercel.app/",
+  // },
+  // {
+  //   name: "To-Do App",
+  //   description:
+  //     "Task management application to add, delete, mark complete, and search tasks by name, built with React.",
+  //   image: "/images/TO-DO App.png",
+  //   github: "https://github.com/Elkinrodriguez03/react-todo-app",
+  //   link: "https://elkinrodriguez03.github.io/react-todo-app/",
+  // },
+  // {
+  //   name: "Monster Fight",
+  //   description:
+  //     "Browser game built with HTML5, CSS, JavaScript, and some Node.js to simulate combat between monster fighters.",
+  //   image: "/images/monster-fight.png",
+  //   github: "https://github.com/Elkinrodriguez03/Monster-Fight_Game",
+  //   link: "https://monster-fight-game-dn67pmsfv-elkinrodriguez03.vercel.app/",
+  // },
 ];
 
