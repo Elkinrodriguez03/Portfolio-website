@@ -1,5 +1,5 @@
 "use client" // this is a client component
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
@@ -27,9 +27,13 @@ const NAV_ITEMS: Array<NavItem> = [
 ]
 
 const Navbar = () => {
-    const { systemTheme, theme, setTheme } = useTheme();
-    const currentTheme = theme === "system" ? systemTheme : theme;
+    const { resolvedTheme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
     const [navbar, setNavbar] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
 
     return (
@@ -80,7 +84,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li>
-                                {currentTheme === "dark" ? (
+                                {mounted && resolvedTheme === "dark" ? (
                                     <button
                                         onClick={() => setTheme("light")}
                                         className="bg-slate-100 p-2 rounded-xl"
@@ -88,7 +92,7 @@ const Navbar = () => {
                                     >
                                         <RiSunLine size={25} color="black"/>
                                     </button>
-                                ) : (
+                                ) : mounted ? (
                                     <button
                                         onClick={() => setTheme("dark")}
                                         className="bg-slate-100 p-2 rounded-xl"
@@ -96,7 +100,7 @@ const Navbar = () => {
                                     >
                                         <RiMoonFill size={25} color="black"/>
                                     </button>
-                                )}
+                                ) : null}
                             </li>
                         </ul>
                     </div>
