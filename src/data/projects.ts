@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     name: "E-commerce",
     description:
-      "Application built with React, Vite, and Tailwind CSS. Allows users to browse products, view details, filter by category or name, and place orders.",
+      "A full-stack e-commerce application built with Next.js, Prisma, PostgreSQL, and TypeScript featuring role-based authentication (Customer & Seller), a seller admin dashboard, and a modern buyer experience with scoped search.",
     image: "/images/ecommerce.png",
     github: "https://github.com/Elkinrodriguez03/E-commerce_frontend",
     link: "https://e-commerce-frontend-eta.vercel.app/",

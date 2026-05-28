@@ -18,7 +18,7 @@ const ProjectsSection = () => {
                         <div key={project.name}> 
                             <SlideUp offset="-300px 0px -300px 0px">
                                 <div className="flex flex-col animate-slideUpCubiBezier md:flex-row md:space-x-12">
-                                    <div className="md:w-1/2">
+                                    <div className="md:w-1/2 flex items-center">
                                         <Link href={project.link} target="_blank">
                                             <Image
                                                 src={project.image}
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
                                         <p className="text-xl leading-7 mb-4x text-neutral-600 dark:text-neutral-400">
                                             {project.description}
                                         </p>
-                                        <div className="flex flex-row align-bottom space-x-4">
+                                        <div className="flex flex-row align-bottom space-x-4 mt-2">
                                             <Link href={project.github} target="_blank">
                                                 <BsGithub
                                                     size={30}
